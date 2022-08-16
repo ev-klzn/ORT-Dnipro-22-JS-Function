@@ -1,0 +1,12 @@
+.container {
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-image: radial-gradient(circle, #e5edee, #dee9e9, #d7e5e4, #d0e0df, #cadcd9);
+}
