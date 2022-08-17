@@ -10,24 +10,30 @@
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
     <body>
-        <div class="container d-flex flex-column text-center">
+        <div class="container d-flex flex-column">
             <header class="flex-grow-1"></header>
             <main>
-                <a href="../">All lessons</a>
-                <h2>Индекс массы тела.</h2>
+                <div class="text-center"><a href="../">All lessons</a>
+                </div>    
+                <h1 class="text-center">Индекс массы тела.</h1>
                 <div>И́ндекс ма́ссы те́ла (англ. body mass index (BMI), ИМТ) — величина, позволяющая оценить степень соответствия массы человека и его роста и тем самым косвенно судить о том, является ли масса недостаточной, нормальной или избыточной. Важен при определении показаний для необходимости лечения.</div>
                 <div>
-                    <div class="row">
+                    <div class="row text-center mt-3">
                         <div class="col m-2">
-                            <label for="heightInput"></label>
-                            <input oninput="calc()" type="number" class="form-control" id="heightInput" placeholder="Ваш рост в см">
+                            <label class="text-center" for="hInput">Ваш рост, см.</label>
+                            <input oninput="calc()" type="number" class="form-control" id="hInput" min="1" max="300" value="1">
                         </div>
+                        
                         <div class="col m-2">
-                            <label for="weightInput"></label>
-                            <input oninput="calc()" type="number" class="form-control" id="weightInput" placeholder="Ваш вес">
+                            <label for="mInput">Ваш вес, кг.</label>
+                            <input oninput="calc()" type="number" class="form-control" id="mInput" min="1" max="350" value="1">
                         </div>
                     </div>
                 </div>
+                <h3 class="text-center">Ваш индекс : <output id="resultPlace"></output>
+                </h3>
+                <h4 class="text-center"><output id="Diagn"></output>
+                </h4>
             </main>
             <footer class="flex-grow-1"></footer>
         </div>

@@ -1,5 +1,7 @@
 .container {
     min-height: 100vh;
+    max-width: 550px;
+    text-align: justify;
 }
 
 a {
